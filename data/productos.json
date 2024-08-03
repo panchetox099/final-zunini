@@ -1,0 +1,42 @@
+[
+  {
+      "id": "1",
+      "nombre": "Camiseta básica",
+      "precio": 15.99,
+      "stock": 100,
+      "categoria": "indumentaria",
+      "descripcion": "Camiseta de algodón básica, ideal para uso diario."
+  },
+  {
+      "id": "2",
+      "nombre": "Pantalón corto deportivo",
+      "precio": 29.99,
+      "stock": 50,
+      "categoria": "indumentaria",
+      "descripcion": "Short deportivo con tela transpirable y cómoda."
+  },
+  {
+      "id": "3",
+      "nombre": "Vestido casual",
+      "precio": 49.99,
+      "stock": 30,
+      "categoria": "indumentaria",
+      "descripcion": "Vestido corto para ocasiones informales."
+  },
+  {
+      "id": "4",
+      "nombre": "Short de baño estampado",
+      "precio": 34.99,
+      "stock": 20,
+      "categoria": "indumentaria",
+      "descripcion": "Short de baño con estampado tropical, perfecto para la playa."
+  },
+  {
+      "id": "5",
+      "nombre": "Falda vaquera",
+      "precio": 27.99,
+      "stock": 40,
+      "categoria": "indumentaria",
+      "descripcion": "Falda corta de mezclilla con diseño clásico."
+  }
+]

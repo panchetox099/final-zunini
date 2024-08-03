@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Details</title>
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Agrega estilos si es necesario -->
+</head>
+<body>
+    <h1>Cart Details</h1>
+    <div id="cart-details">
+        {{#if cart.products.length}}
+            {{#each cart.products}}
+                <div class="cart-item">
+                    <h2>{{this.productId.name}}</h2>
+                    <p>Quantity: {{this.quantity}}</p>
+                    <p>Price: ${{this.price}}</p>
+                    <form action="/carts/{{cart.userId}}/products/{{this.productId._id}}" method="POST">
+                        <input type="number" name="quantity" min="1" value="{{this.quantity}}">
+                        <button type="submit">Update Quantity</button>
+                    </form>
+                    <form action="/carts/{{cart.userId}}/products/{{this.productId._id}}" method="POST">
+                        <button type="submit">Remove from Cart</button>
+                    </form>
+                </div>
+            {{/each}}
+            <p>Total Price: ${{cart.totalPrice}}</p>
+        {{else}}
+            <p>Your cart is empty</p>
+        {{/if}}
+    </div>
+
+    <a href="/products">Back to Products</a>
+</body>
+</html>
